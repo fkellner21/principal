@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #00bcd4;
+}
+
+section {
+  min-height: 100vh;
+  height: auto;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#inicio {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: #fff;
+}
+
+#proyectos {
+  background: #f4f4f4;
+}
+
+#sobre-mi {
+  background: #ddd;
+}
+
+#contacto {
+  background: #333;
+  color: #fff;
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+}
+img {
+  margin: 5px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px, white, solid;
+}
+
+.proyecto-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.proyecto-btn:hover {
+  background: #2196f3;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.red,
+a {
+  text-align: center;
+  margin: 20px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00bcd4;
+}
+
+.card {
+  border: 1px solid #ddd; /* Borde suave */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animación */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva la card al pasar el mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #00bcd4;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #2196f3;
+}
